@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Space Tourism</title>
+</head>
+<body class="destination">
+    <a class="skip-to-content bg-white text-dark" href="#moon">Skip to content</a>
+    <header class="primary-header flex">
+        <div><img class="logo" src="./assets/shared/logo.svg" alt="space tourism logo"></div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li><a class="uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">00</span>Home</a>
+            <li class="active"><a class="uppercase text-white letter-spacing-2" href="#"><span aria-hidden="true">01</span>Destination</a>
+            <li><a class="uppercase text-white letter-spacing-2" href="crew.html"><span aria-hidden="true">02</span>Crew</a>
+            <li><a class="uppercase text-white letter-spacing-2" href="#"><span aria-hidden="true">03</span>Technology</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main" class="grid-container">
+        <div class="flex planet">
+            <h2 class="numbered-title"><span aria-hidden="true">01</span>Pick Your Destination</h2>
+            <img class="planet-image" src="./assets/destination/image-moon.png" alt="the moon">
+        </div>
+        <div class="planet-info grid">
+            <nav>
+                <ul class="secondary-navigation underline-indicators flex">
+                    <li id="moon" class="active"><a href="#"class="ff-sans-cond uppercase text-accent">Moon</a></li>
+                    <li id="mars"><a href="#" class="ff-sans-cond uppercase text-accent">Mars</a></li>
+                    <li id="europa"><a href="#" class="ff-sans-cond uppercase text-accent">Europa</a></li>
+                    <li id="titan"><a href="#" class="ff-sans-cond uppercase text-accent">Titan</a></li>
+                </ul>
+            </nav>
+            <h1 class="ff-serif fs-800 uppercase text-white planet-name">Moon</h1>
+            <p class="ff-sans-normal fs-300 text-accent planet-description">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+            <div class="planet-stats">
+                <h3 id="avg-distance" class="ff-serif fs-500 uppercase text-white"><span class="ff-sans-cond fs-200 uppercase text-accent letter-spacing-3" style="display:block">Avg. Distance</span>384,000 km</h3>
+                <h3 id="est-travel-time" class="ff-serif fs-500 uppercase text-white"><span class="ff-sans-cond fs-200 uppercase text-accent letter-spacing-3" style="display:block">Est. Travel Time</span>3 Days</h3>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
